@@ -49,7 +49,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color:#BC1823 ;
 }
 
 .border-black {
@@ -60,7 +60,7 @@ body {
     background: #000 !important;
 }
 
-/* --------------------------------- Media queries */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
