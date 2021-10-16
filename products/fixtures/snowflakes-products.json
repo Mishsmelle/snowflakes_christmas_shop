@@ -1,0 +1,144 @@
+[
+    {
+        "pk": 1, "model": "products.product", "fields": {"sku": "scs122501", "name": "Reindeer Snowglobe", "description": "Add a touch of class this festive season with this wonderful snow globe featuring a reindeer and three red birds in a forest setting. The beautiful birch wood effect base has been designed to complement any Christmas décor and look fantastic on your mantelpiece or windowsill. This snow globe can be shaken to provide a view of the reindeer and birds in the snow. The base has rubber stoppers allowing you to place it on most surfaces around the home.", "price": 18.00, "category": 1, "rating": 4.6, "image": "reindeer_snowglobe.jpg"}
+    }, 
+
+    {
+        "pk": 2, "model": "products.product", "fields": {"sku": "scs122502", "name": "Santa Snowglobe", "description": "Our Santa Musical Snowglobe Christmas Decoration will look stunning in your home this year. It features a grey knitted base and inside you can see Santa in his traditional Red Suit accompanied with his White Puppy. Santa has hold of a bell, has a present sack on his back and is stood next to a decorated Christmas Tree.", "price": 18.00, "category": 1, "rating": 4.6, "image": "santa_snowglobe.jpg"}
+    }, 
+
+    {
+        "pk": 3, "model": "products.product", "fields": {"sku": "scs122503", "name": "Polar Bear Snow Globe", "description": "Add a touch of class this festive season with this wonderful snow globe featuring two polar bears. The beautiful snow and ice effect base has been designed to complement any Christmas décor and look fantastic on your mantelpiece or windowsill. This snow globe can be shaken to provide a view of the polar bears in the snow. The base has rubber stoppers allowing you to place it on most surfaces around the home.", "price": 16.00, "category": 1, "rating": 4.7, "image": "polarbear_snowglobe.jpg"}
+    }, 
+
+    {
+        "pk": 4, "model": "products.product", "fields": {"sku": "scs122504", "name": "Musical Tree SnowGlobe", "description": "This Musical Christmas snow globe features children building a snowman and is encased with Santa decorating the Christmas tree. It is colour changing and cycles between red, green, blue, teal, purple and pink. This snow globe is motorised so you do not need to shake to get the full snow and glitter effect. It is also musical and plays all of your Christmas favourites including Jingle bells, We wish you a merry Christmas, Silent Night, Deck the Halls, Joy to the World, Noel, Hark the Heralds Angels Sing & O Christmas Tree. It is battery operated meaning you can use this anywhere in your home. This snow globe is suitable for indoor use..", "price": 35.00, "category": 1, "rating": 3.0, "image": "musical_tree_globe.jpg"}   
+    }, 
+
+    {
+        "pk": 5, "model": "products.product", "fields": {"sku": "scs122505", "name": "Skiing Snowman Snow Globe", "description": "This musical animated Skiing Snowman has a Snow globe for a body containing a beautiful festive cottage scene. A 1PC colour changing LED illuminates the moving snow while an optional 8 song Christmas repertoire plays.It has been designed to complement any Christmas décor and look fantastic on your mantelpiece or windowsill. We have a strict quality test on all our products, so you can rest assured that yours will come to you looking perfect. This item is for indoor use only. It has been designed to complement any Christmas décor and look fantastic on your mantelpiece or windowsill. We have a strict quality test on all our products, so you can rest assured that yours will come to you looking perfect. This item is for indoor use only.", "price": 22.00, "category": 1, "rating": 5.0, "image": "skiiing_snowman_globe.jpg"}
+    }, 
+
+    {
+        "pk": 6, "model": "products.product", "fields": {"sku": "scs122506", "name": "Joy Love Peace Snow Globe", "description": "Add a touch of elegance this Christmas with this classic snow globe. This is a glass globe that features the words Joy, Love & Peace in rose gold. Simply shake this to activate and watch as it displays a magical snowy scene. It comes on a white base and has rubber stoppers on its base to ensure it does not move around on your surface.", "price": 17.00, "category": 1, "rating": 4.7, "image": "joy_love_peace_globe.jpg"}
+    }, 
+
+    {
+        "pk": 7, "model": "products.product", "fields": {"sku": "scs122507", "name": "Snowman Village Snow Globe", "description": "Add a touch of class this christmas with this stylish snow globe featuring a snowman and christmas tree scene. Simply shake this to activate and watch as it displays a magical snowy scene. It comes on a village base and has rubber stoppers on its base to ensure it does not move around on your surface. ", "price": 22.00, "category": 1, "rating": 4.4, "image": "snowman_village_globe.jpg"}
+    }, 
+
+    {
+        "pk": 8, "model": "products.product", "fields": {"sku": "scs122508", "name": "PULEO Brookfield Christmas Tree 7.5ft", "description": "Puleo provide the perfect base for your seasonal décor with this 7.5ft tree. Complete with over 1300 tips, it offers a full finish.", "price": 230.00, "category": 2, "rating": 4.7, "image": "brookfield.jpeg"}
+    }, 
+
+    {
+        "pk": 10, "model": "products.product", "fields": {"sku": "scs122510", "name": "PULEO Fraser Fir Tree 7.5ft", "description": "A fir style creates a true wintery result in this Puleo tree design; ready to display your chosen ornaments with classic results.", "price": 310.00, "category": 2, "rating": 4.4, "image": "fraser_fir.jpeg"}
+    }, 
+
+    {
+        "pk": 11, "model": "products.product", "fields": {"sku": "scs122511", "name": "PULEO Islington Fir Tree 7.5ft", "description": "Puleo provide the perfect base for your seasonal décor with this 7.5ft tree. Modelled after a Colorado Spruce, it's a slim style with a realistic finish.", "price": 270.00, "category": 2, "rating": 3.0, "image": "islington.jpeg"}
+    }, 
+
+    {
+        "pk": 12, "model": "products.product", "fields": {"sku": "scs122512", "name": "PULEO Kelford Flocked Tree 7.5ft ", "description": "Standing firm at seven and a half feet, the Kelford Flocked Tree from Puleo is an ideal centrepiece for the season in any living room. Full, icy green needles create a frosty effect, with a conical shape from the base up crafting a tidy, pretty picture, ready for decorating.", "price": 200.00, "category": 2, "rating": 4.6, "image": "kelford_flocked.jpeg"}
+    }, 
+
+    {
+        "pk": 13, "model": "products.product", "fields": {"sku": "scs122513", "name": "PULEO Pre-Lit Slim Brookfield Tree 7.5ft", "description": "Puleo provide the perfect base for your seasonal décor with this 7.5ft tree. Modelled after a Brookfield, it's a slim style with 300 warm white LED lights included.", "price": 245.00, "category": 2, "rating": 3.2, "image": "prelit_slim_brookfield.jpeg"}
+    }, 
+
+    {
+        "pk": 14, "model": "products.product", "fields": {"sku": "scs122514", "name": "Stafford 4-pk. Blended Cotton A-ShirtsPULEO Slim Kensington Fir Tree 7.5ft", "description": "Create the perfect Christmas atmosphere with this narrow and realistic fir tree from Puleo. Richly hued in wintery shades of green, the Slim Kensington Fir Tree is the perfect centrepiece for your home. Finish with glittering decorations and some twinkling lights for the perfect festive feel. ", "price": 210.00, "category": 2, "rating": 4.7, "image": "puleo.jpeg"}
+    }, 
+
+    {
+        "pk": 15, "model": "products.product", "fields": {"sku": "scs122515", "name": "PULEO Colorado Spruce Narrow Tree 7.5ft", "description": "Puleo provides the perfect base for your seasonal décor with this 7.5ft tree. Modelled after a Colorado Spruce, it's a slim style with a realistic finish.", "price": 219.99, "category": 2, "rating": 4.8, "image": "slim_colorado.jpeg"}
+    }, 
+
+    {
+        "pk": 16, "model": "products.product", "fields": {"sku": "scs122516", "name": "Blush pink Wreath.", "description": "A sweet and cheerful design for your home this festive season, the Christmas Blush Flower Wreath is sure to put a smile on your face whilst making your space feel all the more magical. Featuring traditional evergreen elements accented with pinecones and faux peonies with glitter baubles in soft colours, this wreath marries together Xmas design with springtime elements. Perfect for hanging on the front door, wall, or even in your window, it's sure to become one of your favourite Yuletide decorations. ", "price": 33.00, "category": 3, "rating": 4.4, "image": "blush_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 17, "model": "products.product", "fields": {"sku": "scs122517", "name": "Tinsel Wreath", "description": "Impress guests and create a fun, festive atmosphere with this bright and bold Tinsel Bauble Wreath. In a traditional shape, decorated with baubles in a variety of sizes and colours and golden tinsel, this wreath is perfect for hanging on your door or any wall.", "price": 28.00, "category": 3, "rating": 4.4, "image": "tinsel_bauble_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 18, "model": "products.product", "fields": {"sku": "scs122518", "name": "Eucalyptus Wreath", "description": "The luxurious artificial wreath is a unique interpretation of the trend of dried flowers. It looks amazing when hung on an interior door or wall, and becomes an unusual and eye-catching decoration in your home. Our wreath can be displayed in every season of the year, not easy to fade or being ripped, and maintains a vivid and natural shape, giving people a romantic artistic feeling.", "price": 18.00, "category": 3, "rating": 4.8, "image": "eucalyptus_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 19, "model": "products.product", "fields": {"sku": "scs122519", "name": "Traditional Gold Wreath", "description": "A classic wreath is woven with glittering gold ribbon, beads, and studded with red baubles, the Traditional Gold Poinsettia Wreath will look festively lavish when hung over your front door. Every home needs a wreath at Christmas to create a festive entrance into your home, and this lovely wreath will bring an exquisite touch of cheer to your Christmas decor.", "price": 15.00, "category": 3, "rating": 5.0, "image": "traditional_gold_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 20, "model": "products.product", "fields": {"sku": "scs122520", "name": "White Wreath", "description": "Create a festive focual point on your front door or wall with this beautiful white poinsettia pinecone bauble wreath. Made with a variety of faux foilages, pinecones, and snow-white poinsettia flowers. This decoration os sure to help spread the Christms spirit with ease.", "price": 28.00, "category": 3, "rating": 4.7, "image": "white_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 21, "model": "products.product", "fields": {"sku": "scs122521", "name": "Berry Wreath", "description": "Impress your neighbours and make sure you've got the best Christmas decorations this year with the Luxury Red Berry and Pinecone Wreath. This beautiful wreath features a full pine cone outer circle that is decorated with gorgeous red berries to complete the winter look. This festive wreath is perfect for hanging on doors, walls and above mantelpieces this Christmas.", "price": 24.00, "category": 3, "rating": 4.3, "image": "berry_wreath.jpeg"}
+    }, 
+
+    {
+        "pk": 22, "model": "products.product", "fields": {"sku": "scs122522", "name": "candy Cane Lights", "description": "Traditional style candy cane lights for outdoor use", "price": 31.00, "category": 4, "rating": 4.3, "image": "candy_cane_lights.jpeg"}
+    }, 
+
+    { 
+        "pk": 23, "model": "products.product", "fields": {"sku": "scs122523", "name": "Indoor Fairy Lights", "description": "Cluster Style String Lights", "price": 16.00, "category": 4, "rating": 4.8, "image": "indoor_fairy_lights.jpeg"}
+    }, 
+
+    { 
+        "pk": 24, "model": "products.product", "fields": {"sku": "scs122524", "name": "Royal Velvet Down Chamber Pillow", "description": "Modes: Constant, Twinkle or Flashing ", "price": 20.00, "category": 4, "rating": 3.8, "image": "colored_string.jpeg" }
+    }, 
+
+    {
+        "pk": 25, "model": "products.product", "fields": {"sku": "scs122525", "name": "Rope Lights", "description": "Outdoor Multi Colour Rope Lights", "price": 41.00, "category": 4, "rating": 3.0, "image": "rope_lights.jpeg"}
+    }, 
+
+    {
+        "pk": 26, "model": "products.product", "fields": {"sku": "scs122525", "name": "Outdoor Fairy Lights", "description": "Beautiful warm white colours that give your home a delightful Christmas feel", "price": 41.00, "category": 4, "rating": 3.0, "image": "outdoor_fairy_lights.jpeg"}
+    }, 
+
+    {
+        "pk": 27, "model": "products.product", "fields": {"sku": "scs122527", "name": "Red Star Ornament", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.  ", "price": 5.00, "category": 5, "rating": 5.0, "image": "red_star_ornament.jpeg"}
+    }, 
+
+    {
+        "pk": 28, "model": "products.product", "fields": {"sku": "scs122528", "name": "Red Glitter Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 3.00, "category": 5, "rating": 4.3, "image": "red_glitter_bauble.jpeg"}
+    }, 
+
+    {
+        "pk": 29, "model": "products.product", "fields": {"sku": "scs122529", "name": "Red Festive Train", "description": "Trust in Festive Productions to bring some Christmas magic to your home with this collection of glimmering, quirky and colourful decorations. From traditional ornaments to contemporary decorations, you are sure to find the perfect pieces to enchant and inspire this festive season.", "price": 6.00, "category": 5, "rating": 4.6, "image": "red_festive_train.jpeg"}
+    }, 
+
+    {
+        "pk": 30, "model": "products.product", "fields": {"sku": "scs122530", "name": "Red Leaf Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 3.00, "category": 5, "rating": 5.0, "image": "red_leaf_bauble.jpeg"}
+    }, 
+
+    {
+        "pk": 31, "model": "products.product", "fields": {"sku": "scs122531", "name": "Gold Glitter Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to comel.", "price": 6.00, "category": 5, "rating": 4.0, "image": "gold_glitter_bauble.jpeg"}
+    }, 
+
+    {
+        "pk": 32, "model": "products.product", "fields": {"sku": "scs122532", "name": "Golden Carriage Ornament", "description": "Offering an exquisite range of decorations that will delight in any home during the festive season, Kurt S. Adler believes that decorations hold sentimental value and create memories for years to come. With expert attention to detail and something for everyone, start your precious festive collection with Kurt S. Adler this year.", "price": 8.00, "category": 5, "rating": 4.8, "image": "golden_carraige_ornament.jpeg"}
+    }, 
+
+    {
+        "pk": 33, "model": "products.product", "fields": {"sku": "scs122533", "name": "Golden Peacock Ornament", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 4.00, "category": 5, "rating": 4.5, "image": "gold_peacock.jpeg"}
+    },
+
+    {
+        "pk": 34, "model": "products.product", "fields": {"sku": "scs122534", "name": "Pink Butterfly Ornament", "description": "Offering an exquisite range of decorations that will delight in any home during the festive season, Kurt S. Adler believes that decorations hold sentimental value and create memories for years to come. With expert attention to detail and something for everyone, start your precious festive collection with Kurt S. Adler this year.", "price": 7.00, "category": 5, "rating": 4.5, "image": "pink_butterfly.jpeg"}
+    }, 
+
+    {
+        "pk": 35, "model": "products.product", "fields": {"sku": "scs122535", "name": "Branch Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 6.00, "category": 5, "rating": 4.7, "image": "branch_baubl.jpeg"}
+    }, 
+
+    {
+        "pk": 36, "model": "products.product", "fields": {"sku": "scs122536", "name": "Glitter Bird Ornament", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 4.00, "category": 5, "rating": 4.6, "image": "glitter_bird.jpeg"}
+    }
+
+    ]
+
+  
