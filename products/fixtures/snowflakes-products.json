@@ -132,7 +132,7 @@
     }, 
 
     {
-        "pk": 35, "model": "products.product", "fields": {"sku": "scs122535", "name": "Branch Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 6.00, "category": 5, "rating": 4.7, "image": "branch_baubl.jpeg"}
+        "pk": 35, "model": "products.product", "fields": {"sku": "scs122535", "name": "Branch Bauble", "description": "Kaemingk's passion is to travel the continents looking for the most beautiful, original, and creative decorative items for home and garden. Their exquisite range of festive decorations are sure to create a feast for the senses, bringing the magic of Christmas home and enkindle warm memories for years to come.", "price": 6.00, "category": 5, "rating": 4.7, "image": "branch_bauble.jpeg"}
     }, 
 
     {
@@ -142,3 +142,4 @@
     ]
 
   
+
