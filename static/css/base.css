@@ -3,13 +3,16 @@ html {
 }
 
 body {
-    background: url('/media/') no-repeat center center fixed;
+    background: url('/media/snowflake_hero_image.png') no-repeat center center fixed;
     background-size: cover; 
     height: calc(100vh - 164px);
     color: #BC1823;
     font-family: 'Mountains of Christmas', cursive;
 }
 
+#topnav{
+    background: #CFBB76;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -17,6 +20,7 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color: #fff;
 }
 
 .logo-font {
@@ -28,9 +32,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #CFBB76;
     color: white;
     min-width: 260px;
+    display: inline-table;
+    margin-left: 180%;
+    margin-right: 50%;
+    margin-top: 100%;
 }
 
 .btn-black {
@@ -86,6 +94,39 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+
+/* Footer ---------------------------*/
+/* Part of solution to keep footer at bottom of page*/
+/* Credit: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+footer {
+    margin-top: auto;
+  }
+  
+  /* Part of solution to keep footer at bottom of page*/
+  /* Credit: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+  body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Adjust footer background color*/
+  .bg-grey {
+    background-color: #CFBB76;
+  }
+  
+  /* Adjust social media link color */
+  .social-black {
+    color: #212529;
+  }
+  
+  /* Adjust social media link color */
+  .social-white {
+    color: #fff;
+  }
+
+  
 
 /* -------------------------------- Media Queries */
 
