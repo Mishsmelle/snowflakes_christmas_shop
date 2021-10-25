@@ -70,7 +70,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -162,5 +162,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'eur'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51Jg76CFGdZvUD3TrvQUcV9YKun4GupoZeEGpBvCguQlPltihu4GprWqi7v8TXeFzFIhLZXZuVOBDHFxQVTbPwShE00k1kxyOcl')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51Jg76CFGdZvUD3TrTsV99PgL5rLAepqwlz5rmCcVEvyixcfIOCDtaAqvyNtpMsDTjiL1eqaOBNtCU62lKqRRAeKh00PuR9ZWx2')
