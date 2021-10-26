@@ -58,8 +58,8 @@ form.addEventListener('submit', function(ev) {
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     //trigger overlay and fade out form 
-    $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
+    $('#payment-form').fadeToggle(100);
     //get the Boolean value of the saved info box by looking at its check attribute
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     //From using {% csrf_token %} in the form
