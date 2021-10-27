@@ -7,7 +7,7 @@ import django_countries.fields
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('checkout', '0002_auto_20200301_0129'),
+        ('checkout', '0002_auto_20200301_0129.py'),
     ]
 
     operations = [
