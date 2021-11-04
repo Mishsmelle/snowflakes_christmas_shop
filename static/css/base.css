@@ -295,3 +295,19 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+/*footer styling*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #BFE6CC;
+    color: black;
+    text-align: center;
+ }
+ 
+ .footer li {
+ display: inline;
+ color: black;
+ }
