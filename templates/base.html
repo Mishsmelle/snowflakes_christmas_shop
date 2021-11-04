@@ -118,6 +118,27 @@
             </div>            
         </div>-->     
     </header>
+    <section>
+        <div id="hero-image"></div>
+     <!--<h2 style="text-align: center;"> Browse our latest products</h2>
+        <div id="collections-row">
+            <div class="collections-column">
+                <img src="/media/islington.jpeg" alt="Christmas Tree" style="width:33%">
+                <p>Islington 7ft Christmas Tree</p>
+                <p>€210.00</p>
+              </div>
+              <div class="collections-column">
+                <img src="/media/skiiing_snowman_globe.jpeg" alt="Snowglobe" style="width:33%">
+                <p>Skiing Snowmen Snowglobe</p>
+                <p>€14.00</p>
+              </div>
+              <div class="collections-column">
+                <img src="/media/red_festive_train.jpeg" alt="Red train christmas bauble" style="width:33%">
+                <p>Red Train Tree Ornament</p>
+                <p>€3.00</p>
+              </div>-->
+        </div>
+    </section>
 
     {% if messages %}
         <div class="message-container">
@@ -140,32 +161,55 @@
     {% block page_header %}
     {% endblock %}
 
+    {% block content %}
+    {% endblock %} 
+
     {% block page_footer %}
     <!-- Footer-->
     <div class="footer">
-        <p> © 2021 Snowflakes Christmas Shop </p>
-        <p> Follow us on social </p>
-                          <div class="col-lg text-center my-auto">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item me-4">
-                                    <a href="https://www.facebook.com/" target="_blank" style="color:black"><i
-                                            class="bi-facebook fs-3"></i></a>
-                                </li>
-                                <li class="list-inline-item me-4">
-                                    <a href="https://twitter.com/" target="_blank" style="color:black"><i
-                                            class="bi-twitter fs-3"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.instagram.com/" target="_blank" style="color:black"><i
-                                            class="bi-instagram fs-3"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+        <hr class="solid">
+        <div class="footer-row">
+            <div class="footer-column">
+                <p> Follow us on social </p>
+                <!--<div class="col-lg text-center my-auto">-->
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item me-4">
+                        <a href="https://www.facebook.com/" target="_blank" style="color:black"><i
+                            class="bi-facebook fs-3"></i></a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                        <a href="https://twitter.com/" target="_blank" style="color:black"><i
+                            class="bi-twitter fs-3"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/" target="_blank" style="color:black"><i
+                            class="bi-instagram fs-3"></i></a>
+                    </li>
+                </ul>
+            </div>
+                   
+            <div class="footer-column">
+                <p>Sign up to our Newsletter</p>
+                <form action="/action_page.php">
+                <div class="footer-container" style="background-color:white">
+                    <input type="text" placeholder="Your email address" name="mail" required>
+                  </div>
+                  <div class="footer-container">
+                    <input type="submit" value="Subscribe">
+                  </div>
+                </form>
+
+            </div>
+            <div class="footer-column">
+                <p>Contact Us</p>
+
+            </div>
         </div>
+        <p> © 2021 Snowflakes Christmas Shop </p>
+    </div>          
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+
 
     {% block postloadjs %}
     <script type="text/javascript">

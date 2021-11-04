@@ -3,10 +3,6 @@ html {
 }
 
 body {
-    argin-top: 15px;
-    background: url('/media/cosy_christmas_hero.png') no-repeat center center fixed;
-    background-size: cover; 
-    height: calc(100vh - 164px);
     color: #000000;
     font-family:'Quicksand', sans-serif;
 }
@@ -14,6 +10,33 @@ body {
 #topnav{
     background: #ffffff;
 }
+
+#hero-image{
+    background: url('/media/cosy_christmas_hero.png') no-repeat center center fixed;
+    background-size: cover; 
+    height: calc(100vh - 164px);
+  }
+  
+
+.collections-column {
+    float: left;
+    width: 33.33%;
+    padding: 25px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .collections-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media screen and (max-width: 500px) {
+    .collections-column {
+      width: 100%;
+      margin-left: 50%;
+    }
+  }
 
 /* from Bulma */
 .icon {
@@ -298,17 +321,66 @@ input[name='q']::placeholder {
 }
 
 /*footer styling*/
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
 .footer {
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #ffffff;
     color: black;
     text-align: center;
+    max-height: 15%;
  }
  
  .footer li {
  display: inline;
  color: black;
  }
+
+ .footer-column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .footer-container {
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 5px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 500px) {
+    .footer-column {
+      width: 100%;
+    }
+  }
