@@ -3,15 +3,16 @@ html {
 }
 
 body {
-    background: url('/media/snowflake_hero_image.png') no-repeat center center fixed;
+    argin-top: 15px;
+    background: url('/media/cosy_christmas_hero.png') no-repeat center center fixed;
     background-size: cover; 
     height: calc(100vh - 164px);
-    color: #BC1823;
-    font-family: 'Mountains of Christmas', cursive;
+    color: #000000;
+    font-family:'Quicksand', sans-serif;
 }
 
 #topnav{
-    background: #CFBB76;
+    background: #ffffff;
 }
 
 /* from Bulma */
@@ -302,7 +303,7 @@ input[name='q']::placeholder {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #BFE6CC;
+    background-color: #ffffff;
     color: black;
     text-align: center;
  }
