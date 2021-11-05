@@ -68,7 +68,7 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div><i class="fas fa-user-circle fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -88,7 +88,7 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
@@ -118,27 +118,7 @@
             </div>            
         </div>-->     
     </header>
-    <section>
-        <div id="hero-image"></div>
-     <!--<h2 style="text-align: center;"> Browse our latest products</h2>
-        <div id="collections-row">
-            <div class="collections-column">
-                <img src="/media/islington.jpeg" alt="Christmas Tree" style="width:33%">
-                <p>Islington 7ft Christmas Tree</p>
-                <p>€210.00</p>
-              </div>
-              <div class="collections-column">
-                <img src="/media/skiiing_snowman_globe.jpeg" alt="Snowglobe" style="width:33%">
-                <p>Skiing Snowmen Snowglobe</p>
-                <p>€14.00</p>
-              </div>
-              <div class="collections-column">
-                <img src="/media/red_festive_train.jpeg" alt="Red train christmas bauble" style="width:33%">
-                <p>Red Train Tree Ornament</p>
-                <p>€3.00</p>
-              </div>-->
-        </div>
-    </section>
+
 
     {% if messages %}
         <div class="message-container">
