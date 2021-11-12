@@ -11,6 +11,10 @@ body {
     background: #ffffff;
 }
 
+.fixed-top{
+    position: sticky;
+}
+
 #hero-image{
     background: url('/media/cosy_christmas_hero.png') no-repeat center center;
     background-size: cover; 
@@ -106,7 +110,7 @@ body {
 	width: 100%;
 	top: 0;
 	left: 0;
-	position: fixed;
+	position: sticky;
 	background: white;
 	z-index: -1;
 }
@@ -297,7 +301,7 @@ input[name='q']::placeholder {
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
-        position: fixed;
+        position: sticky;
         top: 0;
         right: 0;
         left: 0;
