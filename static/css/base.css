@@ -15,10 +15,14 @@ body {
     position: sticky;
 }
 
+.header-container{
+width: 100%;
+}
+
 #hero-image{
     background: url('/media/cosy_christmas_hero.png') no-repeat center center;
     background-size: cover; 
-    height: calc(100vh - 164px);
+    height: calc(60vh - 64px);
   }
   
 
@@ -211,7 +215,7 @@ input[name='q']::placeholder {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 
