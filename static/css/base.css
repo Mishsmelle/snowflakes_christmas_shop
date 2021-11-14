@@ -34,7 +34,6 @@ width: 100%;
   
   /* Clearfix (clear floats) */
   .collections-row::after {
-    content: "";
     clear: both;
     display: table;
   }
@@ -311,18 +310,10 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
-
-    .header-container {
-        padding-top: 164px;
-    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
     body {
         height: calc(100vh - 116px);
     }
@@ -362,7 +353,7 @@ input[name='q']::placeholder {
   }
   .footer-container {
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #Ececec;
   }
   
   input[type=text], input[type=submit] {

@@ -1,0 +1,34 @@
+<div class="carousel-cell">
+    <div class="card h-100">
+        <!-- Product details-->
+        <div class="card-body card-body-home">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="product-name fw-bolder">{{ product.name }}</h5>
+                <!-- Product reviews-->
+                {% if product.average_rating %}
+                <small class="product-text text-muted">
+                    <!-- Average star rating -->
+                    {% with ''|center:product.average_rating as range %}
+                    {% for _ in range %}
+                    <i class="bi bi-star-fill text-warning"></i>
+                    {% endfor %}
+                    {% endwith %}
+                    <!-- Average rating -->
+                    <span
+                        class="avg-rating ms-2">{{ product.average_rating|floatformat:"1" }}</span>/5</small>
+                {% else %}
+                <small class="product-text text-muted">No Rating</small>
+                {% endif %}
+                <!-- Product price-->
+                {% if product.on_sale is True %}
+                <p class="price">
+                    <span class="text-decoration-line-through">€{{ product.price }}</span>
+                    <span class="text-danger fw-bold">€{{ product.get_sale_price }}</span></p>
+                {% else %}
+                <p class="price">£{{ product.price }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
