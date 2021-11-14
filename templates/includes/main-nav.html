@@ -35,16 +35,17 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'blog' %}" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blogs
+        <li class="nav-item">
+            <a href="{% url 'blog' %}" class="nav-link text-bright mt-0 me-5" id="blog-link">
+                BLOGS
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'blog' %}" class="dropdown-item">Christmas Styling</a>
-                <a href="{% url 'blog' %"} class="dropdown-item">Find a Christmas Bargain</a>
-                <a href="{% url 'blog' %}" class="dropdown-item">Hosting a Christmas Party</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item"></a>
-            </div>
         </li>
+
+        <li class="nav-item">
+            <a href="{% url 'contact' %}" class="nav-link text-bright mt-0 me-5" id="contact-link">
+                CONTACT US
+            </a>
+        </li>
+
     </ul>
 </div>
