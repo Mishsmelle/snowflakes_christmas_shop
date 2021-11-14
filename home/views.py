@@ -1,43 +1,48 @@
-from django.shortcuts import render, redirect
-from .forms import ContactForm
+"""Imports"""
+from django.shortcuts import render
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
+from .forms import ContactForm
 
 
 def home(request):
-    """ This view returns the index page"""
+    """A view to render the contact page"""
 
-    return render(request, 'home/index.html')
+    if request.method == 'POST':
 
-
-def contact(request):
-    '''This view returns contact page and
-       posts the contact form information to the db
-    '''
-    if request.method == "POST":
         form = ContactForm(request.POST)
-        if form.is_valid:
-            form.subject = request.POST['subject'],
-            form.message = request.POST['message'],
-            form.email = request.POST['email'],
+        if form.is_valid():
             form.save()
-            user_email = ''.join(form.email)
-            messages.success(request,
-                             f"Thanks { user_email }, Your message has been sent.\
-                             We will be in touch shortly.")
-            return redirect("home")
+            messages.success(request, 'Message Sent!')
+
+            instance = form.save()
+
+            sender_email = instance.email
+            subject = render_to_string(
+                'home/contact_emails/subject_contact_email.txt',
+                {'instance': instance})
+            body = render_to_string(
+                'home/contact_emails/body_contact_email.txt',
+                {'instance': instance,
+                 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            send_mail(
+                subject,
+                body, settings.DEFAULT_FROM_EMAIL,
+                [sender_email]
+            )
         else:
-            messages.error(request,
-                           'Error: something has gone wrong \
-                            please try again later.')
-            return redirect('home')
-    else:
-        form = ContactForm()
+            messages.error(
+                request,
+                'Error, please check the form is valid')
+
+    form = ContactForm()
 
     template = 'home/contact_us.html'
     context = {
         'form': form,
+        'on_contact_page': True
     }
 
-    return render(request,
-                  template,
-                  context)
+    return render(request, template, context)
