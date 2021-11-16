@@ -1,1 +1,1 @@
-web: gunicorn snowflakes-christmas-shop.wsgi:application
+web: gunicorn snowflakes_christmas_shop.wsgi:application
