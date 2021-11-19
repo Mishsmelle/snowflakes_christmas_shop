@@ -5,6 +5,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
+
 """
 
 import os
@@ -18,8 +19,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = os.environ.get('SECRET_KEY', '')
-SECRET_KEY ='--6*hr&cak4zd9#$_&1+@#qq%m50(!z(bxy%y-!0o%r3r*f%^g'
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
+
+SECRET_KEY = '--6*hr&cak4zd9#$_&1+@#qq%m50(!z(bxy%y-!0o%r3r*f%^g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -203,9 +205,9 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
-#STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-#STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-#STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+# STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+# STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+# STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51Jg76CFGdZvUD3TrvQUcV9YKun4GupoZeEGpBvCguQlPltihu4GprWqi7v8TXeFzFIhLZXZuVOBDHFxQVTbPwShE00k1kxyOcl')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51Jg76CFGdZvUD3TrTsV99PgL5rLAepqwlz5rmCcVEvyixcfIOCDtaAqvyNtpMsDTjiL1eqaOBNtCU62lKqRRAeKh00PuR9ZWx2')
 DEFAULT_FROM_EMAIL = 'info@snowflakeschristmasshop.com'
