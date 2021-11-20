@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-
+<div style="text-align: center;">
 <h2>Shop the collections</h2>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -22,17 +22,17 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" href="{% url 'products' %}?category=trees" src="/media/kelford_flocked.jpeg" alt="Kelford Flocked Christmas Tree">
+        <img class="d-block w-100" href="{% url 'products' %}?category=trees" src="/kelford_flocked.jpeg" alt="Kelford Flocked Christmas Tree">
         <div class="carousel-caption d-none d-md-block">
             <h5>Christmas Trees</h5>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" href="{% url 'products' %}?category=wreaths" src="/media/blush_wreath.jpeg" alt="Blush colored door wreath">
+        <img class="d-block w-100" href="{% url 'products' %}?category=wreaths" src="/blush_wreath.jpeg" alt="Blush colored door wreath">
         <div class="carousel-caption d-none d-md-block">
             <h5>Door Wreaths</h5>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" href="{% url 'products' %}?category=ornaments" src="/media/pink_butterfly.jpeg" alt="Pink Butterfly tree ornament">
+        <img class="d-block w-100" href="{% url 'products' %}?category=ornaments" src="/pink_butterfly.jpeg" alt="Pink Butterfly tree ornament">
         <div class="carousel-caption d-none d-md-block">
             <h5>Christmas Tree Ornaments</h5>
       </div>
@@ -46,7 +46,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
+</div>
 
 {% endblock %}
 <!--<section>
