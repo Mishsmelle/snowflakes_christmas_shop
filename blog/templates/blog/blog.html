@@ -18,11 +18,11 @@
     <div class="overlay"></div>
     <div class="container container-pad mt-2 mb-5">
         <div class="row">
-            <!-- blog page with list of all posts -->
+            <!-- Blog Title-->
             <div class="col-12 mb-3">
                 <h2 class="fw-bold mb-4 display-6">Blog</h2>
                 <hr>
-                <!-- add blog post authentication button -->
+                <!-- If Admin show add post option -->
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <div class="text-center">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="row mb-3">
-            <!-- paginated list of posts -->
+            <!-- List of existing blog posts -->
             {% for post in page.object_list %}
                 <div class="col-12 col-lg-8 offset-lg-2 mt-2 mb-5">
                     <div class="posts">
@@ -49,7 +49,7 @@
                                 <a role="button" class="text-danger text-decoration-none" data-toggle="modal" data-target="#modal-overlay{{ forloop.counter0 }}">Delete</a>
                             </div>
                         {% endif %}
-                        <!-- Modal -->
+                        <!-- Delete Blog option Modal -->
                         <div id="modal-overlay{{ forloop.counter0 }}" class="modal" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             {% endfor %}
-            <!-- pagination control buttons -->
+            <!-- Pagination Controls -->
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="paginate-items text-center">

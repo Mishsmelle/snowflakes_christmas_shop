@@ -1,5 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!--All Products-->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -11,7 +12,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!--Indoor Decoration-->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="indoor-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Indoor Decorations
@@ -23,7 +24,7 @@
                 <a href="{% url 'products' %}?category=trees,ornaments,snowglobes" class="dropdown-item">All Indoor</a>
             </div>
         </li>
-
+        <!--Outdoor Decoration-->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="outdoor-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Outdoor Decorations
@@ -34,18 +35,16 @@
                 <a href="{% url 'products' %}?category=lights,wreaths" class="dropdown-item">All Outdoor</a>
             </div>
         </li>
-
+        <!--Blogs-->
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog' %}" class="nav-link text-bright mt-0 me-5" id="blog-link">
                 Blogs
             </a>
         </li>
-
+        <!--Contact Us-->
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" class="nav-link text-bright mt-0 me-5" id="contact-link">
-                Contact Us
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" class="nav-link text-bright mt-0 me-5" id="contact-link"> Contact Us
             </a>
         </li>
-
     </ul>
 </div>

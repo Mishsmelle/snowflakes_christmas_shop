@@ -13,6 +13,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
+        <!--Page Title-->
         <div class="row">
             <div class="col">
                 <hr>
@@ -20,7 +21,7 @@
                 <hr>
             </div>
         </div>
-
+        <!--Shopping Bag contents-->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -47,7 +48,6 @@
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
@@ -78,12 +78,10 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    {% if item.product.has_sizes %}
-                                                        <input type="hidden" name="product_size" value="{{ item.size }}">
-                                                    {% endif %}
                                                 </div>
                                             </div>
                                         </form>
+                                        <!--Update or remove items from the bag-->
                                         <a class="update-link text-info"><small>Update</small></a>
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
@@ -92,6 +90,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
+                            <!--Bag total and free delivery info-->
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
@@ -105,13 +104,15 @@
                                 </td>
                             </tr>
                             <tr>
+                                <!--Continue shoppong button-->
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase">Continue Shopping</span>
                                     </a>
+                                    <!--Go to checkout option-->
                                     <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
@@ -143,17 +144,16 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
-        var form = €(this).prev('.update-form');
+        var form = $(this).prev('.update-form');
         form.submit();
     })
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
-        var itemId = €(this).attr('id').split('remove_')[1];
-        var size = €(this).data('product_size');
+        var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/€{itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+        var data = {'csrfmiddlewaretoken': csrfToken,};
 
         $.post(url, data)
          .done(function() {
