@@ -313,12 +313,12 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile 
 @media (max-width: 991px) {
     body {
         height: calc(100vh - 116px);
     }
-}
+}*/
 
 /*Image row styling*/
 
