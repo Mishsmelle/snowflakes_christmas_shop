@@ -15,17 +15,23 @@
 <h2 style="text-align:center;">Shop the collections</h2>
 
 <div class="images-row">
-  <div class="images-column">
-    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/pink_butterfly.jpeg" href="{% url 'products' %}?category=ornaments" alt="Pink butterfly tree ornaments" style="width:100%">
-    <div class="images-text">Tree Ornaments</div>
+  <div class="images-row-column">
+    <a href="{% url 'products' %}?category=ornaments">
+      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/pink_butterfly.jpeg" alt="Pink butterfly tree ornaments" style="width:100%">
+      <div class="images-text">Tree Ornaments</div>
+    </a>
   </div>
-  <div class="column">
-    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/kelford_flocked.jpeg" href="{% url 'products' %}?category=trees" alt="Kelford Flocked Christmas Tree" style="width:100%">
-    <div class="images-text">Christmas Trees</div>
+  <div class="images-row-column">
+    <a href="{% url 'products' %}?category=trees">
+      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/kelford_flocked.jpeg" alt="Kelford Flocked Christmas Tree" style="width:100%">
+      <div class="images-text">Christmas Trees</div>
+    </a>
   </div>
-  <div class="column">
-    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/blush_wreath.jpeg" href="{% url 'products' %}?category=wreaths" alt="Rose Blush colored Door Wreath" style="width:100%">
-    <div class="images-text">Door Wreaths</div>
+  <div class="images-row-column">
+    <a href="{% url 'products' %}?category=wreaths">
+      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/blush_wreath.jpeg" alt="Rose Blush colored Door Wreath" style="width:100%">
+      <div class="images-text">Door Wreaths</div>
+    </a>
   </div>
 </div>
 {% endblock %}

@@ -322,7 +322,7 @@ input[name='q']::placeholder {
 
 /*Image row styling*/
 
-.image-row-column {
+.images-row-column {
   float: left;
   width: 33.33%;
   padding: 5px;
@@ -341,7 +341,7 @@ text-align: center;
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
-  .image-row-column {
+  .images-row-column {
     width: 100%;
   }
 }
