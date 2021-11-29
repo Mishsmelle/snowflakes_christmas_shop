@@ -11,60 +11,21 @@
 {% endblock %}
 
 {% block content %}
-  <div style="text-align: center;">
-    <h2>Shop the collections</h2>
-    <!--Product Image Carosel Code credit: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-<!-- Slideshow container -->
-<div class="slideshow-container">
+<!--Image Row-->
+<h2 style="text-align:center;">Shop the collections</h2>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div id="caroselone" href="{% url 'products' %}?category=trees">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/pink_butterfly.jpeg" alt="Pink Butterfly tree ornament" style="height:200px">
-      <div class="caroseltext">Tree Ornaments</div>
-    </div>
+<div class="images-row">
+  <div class="images-column">
+    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/pink_butterfly.jpeg" href="{% url 'products' %}?category=ornaments" alt="Pink butterfly tree ornaments" style="width:100%">
+    <div class="images-text">Tree Ornaments</div>
   </div>
-
-  <div class="mySlides fade">
-    <div id="caroseltwo" href="{% url 'products' %}?category=ornaments">
-      <div class="numbertext">2 / 3</div>
-      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/kelford_flocked.jpeg" alt="Kelford Flocked Christmas Tree" style="height:200px">
-      <div class="caroseltext">Christmas Trees</div>
-    </div>
+  <div class="column">
+    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/kelford_flocked.jpeg" href="{% url 'products' %}?category=trees" alt="Kelford Flocked Christmas Tree" style="width:100%">
+    <div class="images-text">Christmas Trees</div>
   </div>
-
-  <div class="mySlides fade">
-    <div id="caroselthree" href="{% url 'products' %}?category=wreaths">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/blush_wreath.jpeg" alt="Blush colored door wreath" style="height:200px">
-      <div class="caroseltext">Door Wreaths</div>
-    </div>
+  <div class="column">
+    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/blush_wreath.jpeg" href="{% url 'products' %}?category=wreaths" alt="Rose Blush colored Door Wreath" style="width:100%">
+    <div class="images-text">Door Wreaths</div>
   </div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
-<script>
-  var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
 {% endblock %}
