@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<!-- Contact -->
+<section id="contact">
+    <h2 class="text-center">Get in touch</h2>
+    <div class="container-fluid contact-container">
+        <div class="container-fluid mb-4">
+            <p class="text-center">
+                For any questions please fill in the form below, and we'll get back to you as soon as possible!
+            </p>
+            <!-- Contact Form -->
+              <div class="row justify-content-center">
+                <form method="POST" action="{% url 'contact' %}" id="contact-form">
+                    {% csrf_token %}
+                    {% for field in contact_form %}
+                        {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <div class="text-center">
+                        <button class="btn btn-lg btn-secondary text-uppercase" style="font-size: 1.25rem!important;" type="submit">
+                            <span>Send</span>
+                            <span class="icon">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
