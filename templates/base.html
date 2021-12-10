@@ -46,17 +46,17 @@
 
     {% block extra_js %}
     {% endblock %}
+ <!-- Page Title-->
+    <title>Snowflakes Christmas Shop {% block extra_title %}{% endblock %}</title>
 </head>    
     
 <body>
-    <!-- Page Title-->
-    <title>Snowflakes Christmas Shop {% block extra_title %}{% endblock %}</title>
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <!--Logo-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/snowflakes_new_logo.png"  style="height: 120px;">
+                    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/snowflakes_new_logo.png"  style="height: 120px;" alt="snowflakes logo">
                 </a>
             </div>
             <!-- Search Bar -->
@@ -185,7 +185,7 @@
                    <!--Footer Logo-->
             <div class="footer-column">
                 <div><a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/snowflakes_new_logo.png" style="height: 120px;"></a>
+                    <img src="https://snowflakes-christmas-shop.s3.amazonaws.com/media/snowflakes_new_logo.png" style="height: 120px;" alt="snowflakes christmas shop logo"></a>
                 </div>
                 <p>A family owned and operated business since 2021.</p>
             </div>
