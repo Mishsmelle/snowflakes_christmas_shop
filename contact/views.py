@@ -7,7 +7,7 @@ from .forms import ContactForm
 
 
 def contact(request):
-    """ 
+    """
     Contact Page view for customers to contact the Admin
         Args:
             request

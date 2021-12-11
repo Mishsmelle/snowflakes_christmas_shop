@@ -7,7 +7,7 @@ class ContactAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'email', 'subject', 'message',
                     'message_date',)
-    
+
     readonly_fields = (
         'name', 'email', 'subject', 'message',
         'message_date',

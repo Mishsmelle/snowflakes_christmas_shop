@@ -7,7 +7,6 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = ['name', 'email', 'subject', 'message']
 
-
     def __init__(self, *args, **kwargs):
         """ Add Placeholder texts and classes for the form """
 
