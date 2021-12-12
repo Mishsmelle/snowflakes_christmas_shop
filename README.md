@@ -1,19 +1,10 @@
 # Snowflakes Christmas Shop
 
+[View the live project here.](https://snowflakes-christmas-shop.herokuapp.com/)
 
-## Contents
+![Responsive image preview](/workspace/snowflakes_christmas_shop/docs/Testing Images/am-i-responsive-image.png)
 
-
-1. User Experience (UX)
-2. Features
-3. Technologies Used
-4. Testing
-5. Deployment
-6. Credits
-
-[View the live project here.]()
-
-Snowflakes Christmas Shop is an online shopping site for Christmas goods. The website signposts options, provides status and feedback to users at all stages of the shopping process. It is designed for and tested on a range of devices including desktop PCs, tablets and mobile phones.
+Snowflakes Christmas Shop is an online Christmas decoration store. Customers can browse collections, view products, purchase online as well as read the site blog and contact the store through the contact form.  This website is intended for educational purposes only. 
 
 
 ## User Experience (UX)
@@ -21,125 +12,68 @@ Snowflakes Christmas Shop is an online shopping site for Christmas goods. The we
 
 ### User stories
 
-[View User Stories here.]()
+# New Users
+1. As a new user, I want a clear layout so I can easily navigate the site on all platforms.
+2. As a new user, I would like to view all products for sale without having to register for an account.
+3. As a new user, I would like to be easily able to find products for their intended purpose.
+4. As a new user, I would like the ability to search the store either by product title or keyword. 
+5. As a new user, I would like to be able to add items to a shopping bag
+6. As a new user, I would like to be able to update items that are already in my shopping bag.
+7. As a new user, I would like to clearly see the total cost of my order including any shipping costs.
 
+# Registered Users
+1. As a registered user, I would like to see my previous orders or the status of current orders.
+2. As a registered user, I would like to add comments to the blog posts. 
+3. As a registered user, I would like the option to save my delivery details so I don't need to keep entering them.
+4. As a registered user, I would like the ability to edit or delete a previous comment that I have left for a particular blog. 
+5. As a registered user, I would like the ability to edit or delete my profile/account.
 
+# Returning Users
+1. As a returning user, I would like to easily see what new records have been added to the site.
+2. As a returning user, I would like to follow the store on their social media channels so I can stay updated on any upcoming product releases or promotions. 
+3. As a returning user, I would like to have the ability to contact the store if I have any questions or queries regarding a product or order.
+
+# Store Owner / Administrator
+1. As the store owner / admin, I would like the ability to add new products to the site
+2. As the store owner / admin, I would like the ability to edit existing products.
+3. As the store owner / admin, I would like the ability to delete existing products.
+4. As the store owner / admin, I would like the ability to add blog posts to the site. 
+5. As the store owner / admin, I would like the ability to read messages from my customers. 
+6. As the store owner / admin, I would like the ability to edit or delete blog  comments that breach the stores policies. 
+ 
 ## Design
 
-
-The header was originally taken from the Boutique Ado project. The page title was replaced with a business logo and icons updated to be more in keeping with the modern tone of the site. A footer was added to the bottom of all pages, which includes links to the website social media pages, a newsletter sign up section and a Contact us link. 
-
-On the landing page, the hero image was chosen to bring in colour to the landing page and grab the attention of the user. Underneath the hero image, 3 products have been added to highlight the businesses best sellers and product links were added to easily navigate to the product page. 
-The products page keeps the header and footer in place and shows a picture and key details such as the title, and category. When logged in as a superuser, options to edit/delete as shown on the main products page. 
-The product details page shows a much larger image of the product on the left and a detailed product description on the right. A quantity selector under the product description makes it easy for users to select multiple items and a large add to cart button. 
-
 ### Colour Scheme
-The template was kept simple with a white background and black text. The products stand out well against the plain white background. The text is easy to read as it is dark on a light background. 
+
+The backgrounds are a nice clean white with black text. The colors introduced through the logo and buttons are red and green, traditional Christmas colours in keeping with the theme. 
 
 ### Typography
-The font chosen was Google’s Quicksand. This was again chosen for a nice clean look and to be as user friendly as possible. 
 
-### Buttons
-Buttons are coloured red and green in keeping with the Christmas theme. 
-The search box and profile/product management button is in grey to match the other navbar links.
+The Quicksand font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Quicksand is both easy to read and fun. 
 
 ### Imagery
-Product images are all in the jpeg format to reduce the load speed of the site. All product images are sourced from third party ecommerce sites, Arnotts.ie and therange.ie. The main page hero image was sourced from Canva.com and the text added in canva by the developer. 
 
-### Icons
-Font Awesome Icons were used for all site icons such as User account and shopping cart.
+Imagery is important. The hero image is designed to be striking and catch the user's attention. It also has a classic Christmas feel and compliments the site's colour scheme. 
 
 ### Wireframes
-The wireframes for Desktop, Tablet and Mobile versions are here.
-These wireframes were created at the start of the project and although very similar to the resulting website includes some features that were not implemented:
-* Wish List
-* Change password
 
+Home Page Wireframe - [View]()
+Mobile Wireframe - [View]()
+Contact Us Page Wireframe - [View]()
 
-## Database model
+### Features
 
-
-The database model uses a relational structure with tables for Product, ProductReview, Order, OrderLineItem, User, UserProfile and Categories.
-
-The database schema is here.                                            [Go to Contents ⏫]()
-
-
-## Features
-
-
-The Bootstrap toolkit was used throughout including:
-* Grid
-* Navbar
-* Modal
-* Cards
-* Carousel
-* Forms
-* Buttons
-* Toasts
-* Django-multiselectfield
-
-In order for the site owner to add in size availability according to stock levels, the Django Multiselectfield was used. This provides checkboxes for each size option that can be purchased.
-
-### Notifications
-Bootstrap toasts were used to give feedback to the user on success, informational and error purposes.
-
-### Sale
-A site owner can select whether a product is on sale with a checkbox and set the percentage discount.
-The product will then be included with other sale products from the Sale link on the navbar.
-Each product on sale will have a Sale badge, original price with a strike through and sales price in the product card.
-
-### Cart/Checkout/Checkout success
-The site has separate pages for cart, checkout and checkout success corresponding to each stage of the purchase process. The customer is able to alter the quantity in the cart between 1 and 99. The price for individual products, sub-total of quantity for each product size, overall cart total and order total after shipping cost is shown.
-
-### Checkout
-Name, email, phone, address and card details are required on the checkout page.
-A checkbox provides an option to save the contact and address details back to the profile.
-
-### Free shipping
-A shipping fee over €7 is added to all orders under €50.
-Free shipping is automatically applied for users who spend over €50. 
-
-### Profile
-Customer’s contact details and order history are saved in their profile.
-Contact details can be updated on the profile or check out pages.
-Security is in place to ensure only the customer who submitted the order can see the order history.
-
-### Add/Edit products
-A site owner can create new product for the Product Management link on the navbar. Existing products can be updated via the Edit and Delete links on each item in the product views.
-
-### Search box
-Full search capability on product titles and description.
-
-### Defensive programming
-* Confirm Deletion
-* HTML validity
-* Non-public pages protected from unauthorised access.
-* Admin pages protected from non-admin access
-* Errors 404 and 500 handled by pages within the site.
-* Comprehensive user notifications
-* CRUD
-* Site owners have full CRUD capability for products.
-* Crispy forms
-* Used to improve function and style of forms.
-* AWS S3 hosting
-* Static and media files hosted on AWS S3.
-* Responsive on all device sizes tested
-
-The use of the Bootstrap grid system and additional media queries enables the site to display effectively on a broad range of desktop, tablet and mobile screen sizes.
-
-
-## Future development
-
-
-Features not implemented from Wireframes:
-* Wish List
-* Change password
-* Filter on products page
-* Calculations for VAT & postage in different countries
-* Notification if no product stock.
-* Cart products saved to profile
-* Magnification on product images
-* Contact form                                                                  [Go to Contents ⏫]()
+    * Responsive on all device sizes
+    * Interactive elements
+    * Header 
+    * Footer
+    * Homepage
+    * Product Page
+    * Checkout
+    * Blogs 
+    * Contact Us page with form
+    * Django Administrator page
+    * Product management 
 
 
 ## Technologies Used
@@ -147,164 +81,341 @@ Features not implemented from Wireframes:
 
 ### Languages Used
 
-* HTML5
-* CSS3
-* Javascript
-* Python
-* Frameworks
-* Bootstrap 5.1
-Bootstrap layout, content, components and utilities were used to structure the site and make it responsive.
-* Django
-Django was used to structure the site.
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [Javascript](https://www.javascript.com/)
+* [Python](https://www.python.org/)
 
-### Libraries
-* **jQuery**
-* jQuery has been used to launch toast messages, enable increment/decrement functionality in the cart, processing Stripe payments and checking country fields at checkout.
-* **Fontawesome Icons**
-Fontawesome Icons were used for all site icons.
+### Frameworks, Libraries & Programs Used
 
-### Development & production platforms
-* **GitPod**
-GitPod was used for code editing, version control, committing and pushing to GitHub.
-* **GitHub**
-GitHub was used to store and manage project code pushed from GitPod.
-* **Heroku**
-Heroku was used for hosting the deployed web application.
-* **AWS S3**
-Hosting live static and media files.
-
-### Other applications
-* **Balsamiq**
-Balsamiq was used for wireframes created during the design process.
-* **Favicon.io**
-This website provided the capability for Favicon generation.                    [Go to Contents ⏫]()
-
+* [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    Bootstrap was used to assist with the responsiveness and styling of the website.
+* [Google Fonts:](https://fonts.google.com/)
+    Google fonts were used to import the 'Quicksand' font into the style.css file which is used on all pages throughout the project.
+* [Font Awesome:](https://fontawesome.com/)
+    Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+* [jQuery:](https://jquery.com/)
+    jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+* [Git](https://git-scm.com/)
+    Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub:](https://github.com/)
+    GitHub is used to store the projects code after being pushed from Git.
+* [Canva:](https://www.canva.com/)
+    Canva was used to create the logo, resizing images and editing photos for the website.
+* [Balsamiq:](https://balsamiq.com/)
+    Balsamiq was used to create the wireframes during the design process.
+* [Django:](https://www.djangoproject.com/)
+    A Python based framework for developing secure and maintainable websites - the core of this project.
+* [Amazon Web Services (AWS):](https://aws.amazon.com/)
+    AWS was used to host all static and media files using the S3 and IAM services.
+* [Stripe:](https://stripe.com/ie)
+    an API framework for processing secure payments.
+* [Postgres:](https://www.postgresql.org/)
+    Relational database, hosted and deployed via Heroku.
+ 
 
 ## Testing
 
-
-See Test report here.                                                           [Go to Contents ⏫]()
-
-## Making a Local Clone
-
-1. Log into GitHub and locate the Snowflakes-Christmas-Shop
-2. Under the repository name, click ‘Clone or download’.
-3. To clone the repository using HTTPS, under ‘Clone with HTTPS’, copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in step 3.
-    >$ git clone https://github.com/mishsmelle/snowflakes-christmas-shop
-8. Click Enter. Your local clone will be created.
-    >[Please see this link for a more detailed explanation.]()
-9. Following Stripe documentation, create a Stripe account and in Developers on the API key tab find the public and secret key.
-10. Also in Stripe create a Webhook and find the Webhook secret key.
-11. Create an env.py file to contain the following environment variables.
-    >os.environ.setdefault("SECRET_KEY", "<app secret key>")
-    >os.environ.setdefault("DEVELOPMENT", "True")
-    >os.environ.setdefault('STRIPE_PUBLIC_KEY', '<from Stripe>')
-    >os.environ.setdefault('STRIPE_SECRET_KEY', '<from Stripe>')
-    >os.environ.setdefault('STRIPE_WH_SECRET', '<from Stripe>')
-12. Create a .gitignore file ensuring *.sqlite3, *.pyc and pycache are added.
-13. Install all project requirements with pip install –r requirements.txt
-14. Run database migrations
-15. Load category and product fixtures in following order
-16. Create a superuser
-17. Run the app
-
-### Deploy to Heroku
-
-1. Login to Heroku
-2. Create new app
-3. Add name , choose closest region and click Create app
-4. In Resources create a new Postgres database
-5. Select Hobby Dev-Free plan and click Submit Order Form
-6. In your IDE install dj_database_url and psycopg2
-7. Import dj_database_url in settings.py
-8. Replace default database with a call to dj_database_url.parse and give it the database URL from Heroku
-    >DATABASES = {
-    >'default': dj_database_url.parse('your-url-goes-here')
-    >}
-
-9. Run all migrations again for the Postgres database (see steps 11 to 13 in Making a Local Clone)
-10. Install gunicorn to act as a web server
-11. Freeze requirements
-12. Create a Procfile to tell Heroku to create a web dyno to run gunicorn to serve the Django app. This should contain the following:
-13. Login to Heroku from your IDE using your API key as the password
-14. Temporarily disable collectstatic so Heroku will not collect static files when we deploy.
-15. In Settings, create the following Config Vars
-16. Add the Heroku hostname to ALLOWED_HOSTS in settings.py
-17. Commit & push to GitHub
-18. Initialise your IDE with Heroku and push to it.
-19. In Heroku on the Deploy tab select GitHub as Deployment method
-20. Search for repository and click Connect
-21. Click Enable Automatic Deploys
+See Testing.md for full testing details 
 
 
-#### Configuring S3
-1. Create an AWS account
-2. Create a bucket for S3
-3. Uncheck Block all public access and acknowledge settings
-4. Enable static website hosting & Save changes.
-5. Add default values for index, error doc & click Save.
-6. In Permissions on CORS paste the following:
-7. Click Edit in Bucket policy to create a security policy
-8. Click Policy Generator and for Principal enter * and actions add Get Object
-9. Enter the ARN from step 7.
-10. Click Add statement
-11. Click Generate Policy
-12. Copy Policy JSON Document
-13. Paste into Bucket policy (with slash & asterisk at end of Resource for full access) & Save changes.
-14. Click Edit in Access Control List, check box for List access for Everyone & Save changes.
+## Deployment
 
-### AWS IAM (Identity & Access Management)
-1. In AWS navigate to IAM, User groups, Create user group
-2. Enter a name and click Create group
-3. In Policies, click Create Policy
-4. On the JSON tab, click Import managed policy
-5. Search for S3 and import the AmazonS3FullAccess policy
-6. Add in the ARN from the AWS Policy Generator page
-7. Click Next Tags and Review
-8. Add a name, Description and click Create policy
-9. Attach the policy to the group created.
-10. In User Groups select your group
-11. In Permissions, click Attach Policies
-12. Select the policy created & click Add permissions
-13. In Users, click Add users
-14. Add username and Access Type as Programmatic access & click Next
-15. Select to add user to our policy, click Next and Create User
-16. Click Download.csv to get your access credentials.
 
-### Connect Django to S3
-1. Install boto3
-2. Install Django Storages
-3. Freeze requirements
-4. Add the following settings for Django to connect to S3
-5. In Heroku Config Vars add the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY and delete the DISABLE_COLLECTSTATIC variable
-6. In settings.py tell Django where static files are located
-7. Create a media folder on S3 and upload files
-8. Select Grant Public Read Access to the objects                               [Go to Contents ⏫]()
+This project was developed using [GitPod](https://gitpod.io/) and the latest version of the code base can be found in the master branch of this repository. No other branches were created during the development of this project.
+
+### Cloning the Repository
+
+To clone [this repository](https://github.com/Mishsmelle/snowflakes_christmas_shop) follow the instructions below:
+1. Navigate to the repository.
+2. Click on the Code button and copy the URL from the Clone>>HTTPS section.
+3. Inside your development environment/IDE open a command terminal.
+4. Create / navigate to the directory you would like the cloned copy to be made.
+5. Type in the following command using the URL copied from step 2 and press Enter. This will create a cloned copy of the repository.
+```git clone https://github.com/mishsmelle/snowflakes-christmas-shop```
+
+### Deploying to Heroku from Gitpod
+
+1. Open [Heroku](https://heroku.com/) in the browser and login, creating a new account if required.
+2. On the Heroku Dashboard, click New->Create New App.
+3. Give the app a new name and choose a region closest to you. Click the Create App button.
+4. On the resource tab, provision a new Postgres database selecting the free Hobby Dev plan.
+5. To use Postgres in the application two packages are required - these are dj-database-url and psycopg2. To install these in Gitpod type the following commands:
+
+```
+pip3 install dj_database_url
+pip3 install psycopg2-binary
+```
+
+6. Freeze the requirements in Gitpod by typing ```pip3 freeze > requirements.txt.``` Heroku will use the requirements.txt file to install these packages during deployment.
+7. Open the settings.py file and import the dj_database_url package by adding ```import dj_database_url``` at the top of the file underneath import os.
+8. In the database section comment out the default configuration and replace it with the code below. The DATABASE_URL can be found under the settings tab in Heroku in the Config Vars section.
+   
+```
+DATABASES = {
+    'default': dj_database_url.parse('DATABASE_URL')
+}
+```
+
+9. As a new database has been connected the migrations will need to run again to setup the database. Type in the following commands in Gitpod to run the migrations.
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+10. The database can be populated using the fixtures and JSON files. Run the following commands to load the data into the Postgres database:
+
+```
+python3 manage.py loaddata categories
+python3 manage.py loaddata products
+```
+
+11. Create a superuser account for the Django Administrator Panel using command ```python3 manage.py createsuperuser.``` When prompted, enter a username, email address and password.
+12. To ensure the database URL doesn't end up in version control, replace the database configuration as set up in step 8 with the code below. When running on Heroku the DATABSE_URL will be defined in the Config Vars and the correct URL will be parsed by dj_database_url. Otherwise the sqlite database will be used when running in the Gitpod development environment.
+
+    ```
+   if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+    	   }
+    ```
+
+13. For the app to run, the Gunicorn web server package is required. To install this package run command ```pip3 install gunicorn.```
+14. Freeze the requirements by running command ```pip3 freeze > requirements.txt.```
+15. In the root directory of the project, create a Procfile by running the command ```touch Procfile.``` The Procfile is used to tell Heroku to create a web dyno to run gunicorn and serve in our Django app.
+16. Open the Procfile copy in the following text, ensuring there is no blank line at the end of the file.
+   ```web: gunicorn vinylrack.wsgi:application```
+17. Login to Heroku using the ```heroku login -i``` command.
+18. As AWS will be used to host the static files we need to prevent Heroku from collecting static files during deployment. This can be done by setting DISABLE_COLLECTSTATIC to 1. Enter the following command to set DISABLE_COLLECTSTATIC:
+```heroku config:set DISABLE_COLLECTSTATIC=1 --app app-name```
+19. In the settings.py file add the Heroku app to the list of allowed hosts. Also add in localhost to ensure the app still works in Gitpod.
+ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
+20. Edit the .gitignore file (or create a new one if it doesn't exist) and add the following if required: 
+    * core.Microsoft*
+    * core.mongo*
+    * core.python*
+    * env.py
+    * __pycache__/
+    * *.py[cod]
+    * node_modules/
+    * .github/
+    * *.sqlite3
+    * *.pyc
+
+21. Commit the changes to the main Github repository using the following commands:
+    * git add .
+    * git commit -m "Add commit message here"
+    * git push
+22. Initialise the Heroku repository using command ``` heroku git:remote -a app-name.```
+23. To deploy the app to Heroku push the changes to the remove Heroku repository using command ```git push heroku main.``` This will deploy the site without any static files.
+24. To automatically deploy when any changes are committed to Github, click in the Deploy tab in Heroku and set the Deployment method to Github.
+25. In the Connect to GitHub section, search for the repository and click connect when the correct one is found.
+26. In the Automatic Deploys section click on the Automatic Deploy button. This ensures that every time we push any changes to Github the code will be automatically deployed to heroku as well.
+27. Create a new Django secret key using the Django Secret Key Generator website.
+28. In Heroku, under the Settings tab, create a new Config Var with a key name of SECRET_KEY with the value set to the key generated in the previous step.
+29. To ensure the Heroku app picks up this key add the following to the settings.py file:
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+30. Commit the changes to Github. Heroku should pickup the changes from Github and deploy the site to app-name.herokuapp.com.
+
+### AWS S3 Configuration
+
+The AWS S3 service will be used to host all static files and images.
+1. Open [AWS](https://aws.amazon.com/) in the browser and login, creating a new account if required.
+2. Open the AWS Management Console and search for the S3 service using the search box if it isn't listed in your recently accessed services.
+3. Click 'Create New Bucket' to create a new bucket. It is recommended to give the bucket the same name as your Heroku app.
+4. Select the region closest to you.
+5. Uncheck 'Block all public access' and use the tick box below to acknowledge that the bucket will be public. Click 'Create bucket'.
+6. Select your bucket from the bucket list. In the properties tab, turn on static website hosting and set the following default values then click save.
+    * Index document: index.html
+    * Error document: error.html
+7. In the Permissions tab, paste in the following CORS configuration then click save.
+
+    ```
+   [
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+    ]
+    ```
+
+8. In the Permissions tab go to the Bucket policy section and click the Edit button. Click the Policy Generator button to create a new security policy. Select/enter the following:
+    * Policy Type: S3 Bucket Policy
+    * Principal: *
+    * Actions: GetObject
+    * ARN: Copy the ARN from the Bucket Policy tab and paste here.
+    * Click Add Statement then Generate Policy.
+    * Copy the new policy and paste it into the Bucket Policy editor.
+    * To allow access to all resources add a "/*" onto the end of the Resource key value.
+    * Save the new policy.
+9. In the Permissions tab go to the Access Control section and click the Edit button. On the "Everyone (public access)" line check the List checkbox and click Save changes.
+10. Go back to the services and select Identity and Access Management (IAM) to add a new user. Use the search bar if IAM isn't listed. IAM will be used to create a new group, create an access policy giving the group access to the S3 bucket and to assign a user to the group so they can use the policy to access the files in the S3 bucket.
+11. Under User Groups click the Create Group button. Enter a group name then scroll to the bottom and click Create group.
+12. Under Policies click the Create Policy button. Follow the steps below:
+    * Go to the JSON tab and select Import managed policy.
+    * Search for the AmazonS3FullAccess policy and Import this.
+From the S3 Bucket Policy page copy the ARN and paste this twice into the Resource key as shown below:
+
+```
+   "Resource": [
+        "arn:aws:s3:::s3-bucket-name",
+        "arn:aws:s3:::s3--bucket-name/*"
+    ]
+```
+
+13. Click the Review Policy button giving the policy a name and description. Click the Create Policy button to save all changes.
+14. Under User Groups, select the group that was created above. On the Permissions tab, select Attach Policies from the Add permissions dropdown menu. Search for the policy that was created above, select it and click the Add permissions button.
+15. Under Users, click the Add Users button and give the user a name. Check the Access Key - Programmatic access option and click next. On the next page add the user to the new group that was created above. Click through to the end then click Create User.
+16. Download the CSV file - this contains the user access key and secret access key which will be used by the Django app for authentication. Save the file in a secure location as this cannot be downloaded again once the user has been created.
+17. To connect Django to the new S3 Bucket two new packages are required: boto3 and django-storages. In Gitpod type the following commands to install the packages:
+
+```
+pip3 install boto3
+pip3 install django-storages
+```
+
+18. Freeze the requirements by running command ```pip3 freeze > requirements.txt.```
+19. In the settings.py file add 'storages' to the INSTALLED_APPS list.
+20. Add the following configuration to the settings.py file. As the S3 Bucket is only required when using Heroku, an if statement is used to check if the variable USE_AWS exists.
+
+    ```
+    if 'USE_AWS' in os.environ:
+        # Bucket Config
+        AWS_STORAGE_BUCKET_NAME = 'bucket-name'
+        AWS_S3_REGION_NAME = 'eu-west-2'
+        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    ```
+
+21. In Heroku at the following Config Vars to the app. The AWS keys can be found in the csv file that was downloaded when creating the S3 user. The ```DISABLE_COLLECTSTATIC``` can also be removed as Heroku will get the static files from AWS for any future deploys.
+
+```
+AWS_ACCESS_KEY_ID : From the csv file
+AWS_SECRET_ACCESS_KEY : From the csv file
+USE_AWS : True
+```
+
+Remove variable ```DISABLE_COLLECTSTATIC```
+22. In the settings.py file add the following inside the ```USE_AWS``` if statement to tell Django where the static files will be sourced from in production.
+
+```
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+
+23. The next step is to configure Django to use S3 to store our static files whenever someone runs ```collectstatic``` and to also store any uploaded images in the S3 bucket.
+24. In the root folder create a file by running ```touch custom_storages.py.```
+25. Copy the following configuration into the file and save:
+
+    ```
+    from django.conf import settings
+    from storages.backends.s3boto3 import S3Boto3Storage
+    class StaticStorage(S3Boto3Storage):
+        location = settings.STATICFILES_LOCATION
+    class MediaStorage(S3Boto3Storage):
+        location = settings.MEDIAFILES_LOCATION
+    ```
+ 
+26. In the settings.py file add the following inside the USE_AWS if statement to configure Django to use our custom storage class for static file storage and to override the static and media URLs in production.
+
+    ```
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+ 
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    ```
+
+27. In the settings.py add the following lines to the top of the USE_AWS if statement. These will configure the browser to cache static files for a long time as they don't change often.
+
+```
+   AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+```
+
+28. At this point all the changes can be committed to Github, triggering Heroku to deploy the app. Confirm all the static files have been uploaded to the S3 bucket.
+29. To add the media files to the S3 bucket go to AWS S3, select the bucket and click on the Create folder. Create a folder called media.
+30. Inside the media folder click Upload to upload all the media files to the S3 bucket. Under Permissions, set the Predefined ACL to Grant public-read access.
+31. The superuser email address for the Postgres database needs to be confirmed to allow the user to login to the application. To do this, login to the Django admin panel and confirm the email address for the superuser by checking the Verified box. 
+
+## Stripe Configuration
+
+1. Login to Stripe and in the Developers section click on API Keys. In Heroku add the publishable and secret keys as the following config variables.
+
+```
+STRIPE_PUBLIC_KEY
+STRIPE_SECRET_KEY
+```
+
+2. Click on the Webhooks link in the Developers section. Click on Add Endpoint to configure the following:
+EndPoint URL: ```https://app-name.herokuapp.com/checkout/wh/```
+Click receive all events in the Events to send section and click Add Endpoint.
+3. On the webhook screen, reveal the Signing Secret and copy this into Heroku as a config variable named ```STRIPE_WH_SECRET.```
+4. To confirm the webhook is working, send a test webhook from Stripe to ensure the listener is working. 
+
+## Email Configuration
+
+The following process assumes that GMail will be used for sending and receiving emails.
+1. Open GMail in the browser and login, creating a new account if required.
+2. Open the account settings, select Accounts and Import and then other Google account settings.
+3. Click on the Security tab and turn on 2-Step Verification under Signing in to Google.
+4. Click Get Started and enter your Gmail password and then follow the 2-Step Verification as instructed.
+5. Once the 2-Step Verification has completed go back to the Security tab and select App passwords under Signing in to Google.
+6. On the App passwords screen select Mail for the app and other for the device giving it the name Django. Click Generate to complete.
+7. Copy the password and create a new config variable in Heroku called ```EMAIL_HOST_PASS``` pasting in the password as the value.
+8. Also create another config variable in Heroku called ```EMAIL_HOST_USER``` and set this to the Gmail account.
+9. In settings.py add the following:
+
+   ```
+   if 'DEVELOPMENT' in os.environ:
+        EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+        DEFAULT_FROM_EMAIL = 'app-name@example.com'
+        EMAIL_SUBJECT_PREFIX = '[App-Name]'
+    else:
+        EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+        EMAIL_USE_TLS = True
+        EMAIL_PORT = 587
+        EMAIL_HOST = 'smtp.gmail.com'
+        EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+        EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+        DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+        EMAIL_SUBJECT_PREFIX = '[App-Name]'
+    ```
+
+
+10. Confirm the email is functioning correctly by registering a new user and checking that the email confirmation is received.
 
 
 ## Credits
 
-
 ### Code
-The site was based on the Code Institute Boutique Ado project.
-Bootstrap 5.1 was used throughout the site so that it is responsive to different devices and viewport sizes.
-Code was used from external sources in the following instances:
+* [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
 ### Content
-All content was written by the developer.
-
-### Media
-The images used were sourced as follows:
-[Arnotts.com]()
-[Canva.com]()
-[Therange.com]()
+The majority of the data for the products listed on this site was taken from [Arnotts](https://www.arnotts.ie) and [Christmas-Decorations.com](https://www.christmas-decorations.com/) websites 
+The Hero image was from [Canva] with inspiration from the [Christmas Decorations](https://www.christmas-decorations.com/) homepage.
 
 ### Acknowledgements
-
-Caleb for his mentoring and advice.
-Code Institute Tutors and peers for assistance with feature implementation and bug fixes.
-Go to Contents ⏫
-
+I would like to thank my mentor,  Caleb Mbakwe for his guidance throughout this project. 
+The tutors at Code Support for their assistance with issues that occurred during the design of the site. 
+I would also like to thank my peers on Slack who helped by answering any questions I had with this project.
+ 
