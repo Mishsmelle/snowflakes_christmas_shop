@@ -2,7 +2,7 @@
 
 [View the live project here.](https://snowflakes-christmas-shop.herokuapp.com/)
 
-![Responsive image preview](/docs/Testing Images/am-i-responsive-image.png)
+![Responsive image preview](am-i-responsive-image.png)
 
 Snowflakes Christmas Shop is an online Christmas decoration store. Customers can browse collections, view products, purchase online as well as read the site blog and contact the store through the contact form.  This website is intended for educational purposes only. 
 
@@ -116,7 +116,7 @@ Contact Us Page Wireframe - [View]()
 
 ## Testing
 
-See Testing.md for full testing details 
+See [Testing.md](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/testing.md) for full testing details 
 
 
 ## Deployment
