@@ -29,7 +29,7 @@ Snowflakes Christmas Shop is an online Christmas decoration store. Customers can
 5. As a registered user, I would like the ability to edit or delete my profile/account.
 
 # Returning Users
-1. As a returning user, I would like to easily see what new records have been added to the site.
+1. As a returning user, I would like to easily see what new products have been added to the site.
 2. As a returning user, I would like to follow the store on their social media channels so I can stay updated on any upcoming product releases or promotions. 
 3. As a returning user, I would like to have the ability to contact the store if I have any questions or queries regarding a product or order.
 
