@@ -684,6 +684,8 @@ DESKTOP
 
 ## Bugs/Issues/Unresolved Issues
 
+The site was originally going to have products with different sizes and I built a lot of the files using the boutique ado walkthorugh as a guide for this part. When I decided to go in a different direction I tried to remove the references to sizes from the code but found I was encountering a lot of errors. Given that it was not impacting the functioning of the site and I was restricted by time constraints I chose to leave these in but in future iterations of the site would liek to tidy up the code to remove these. 
+
 When testing a few errors were found:
 
 In the html validator for the contact us page, an error message indicates that a select element cannot have a placeholder but removing the placeholder causes a 404 error on the contact page. This has since been resolved. 
@@ -691,3 +693,4 @@ In the html validator for the contact us page, an error message indicates that a
 When creating a order as a registered user the order history is not updating on the profile page. This error has since been resolved. 
 
 On the Shopping bag page the remove button is not working. This error has since been resolved. 
+
