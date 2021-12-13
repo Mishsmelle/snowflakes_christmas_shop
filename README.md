@@ -2,7 +2,7 @@
 
 [View the live project here.](https://snowflakes-christmas-shop.herokuapp.com/)
 
-![Responsive image preview](am-i-responsive-image.png)
+![Responsive image preview](/docs/testing_images/am-i-responsive-image.png)
 
 Snowflakes Christmas Shop is an online Christmas decoration store. Customers can browse collections, view products, purchase online as well as read the site blog and contact the store through the contact form.  This website is intended for educational purposes only. 
 

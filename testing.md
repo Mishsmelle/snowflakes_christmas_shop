@@ -2,12 +2,12 @@
 
 ### Table of Contents
 
-1.Approach
-2.Responsive Testing
-3.User Story Testing
-4.Features Testing
-5.Code Validation
-6.Bugs / Issues
+1. Approach
+2. Responsive Testing
+3. User Story Testing
+4. Features Testing
+5. Code Validation
+6. Bugs / Issues
 
 ## Approach
 
@@ -37,7 +37,7 @@ The mobile and tablet responsiveness of the site was tested using the Device Mod
 
 For mobile devices the minimum screen width the site was tested at was 320 pixels (iPhone SE) in [Chrome DevTools](https://developer.chrome.com/docs/devtools/). The site was also tested using [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) and passed all tests (see image below).
 
-![](Mobile-Friendly Test - Google Search Console 2021-12-11 21-37-46.png)
+![](/docs/testing_images/mobile_friendly_test.png)
 
 The responsiveness was also tested on an iPhone X Max. The site was consistently responsive across all devices and screen sizes.
 
@@ -60,7 +60,7 @@ Users can browse by category by clicking on the indoor and outdoor decorations l
 
 4. **As a new user, I would like the ability to search the store either by product title or keyword.**
 
-Users can search the website using the search bar at the top of the screen by the product names and categories.
+Users can search the website using the search bar at the top of the screen by entering a keyword. The search results will appears if the keyowrd matches any product titles. This could be improved in future iterations of the site to include categories. 
 
 5. **As a new user, I would like to be able to add items to a shopping bag.**
 
@@ -88,9 +88,9 @@ Registered users will have the option to add a comment to a Blog post. Unregiste
 
 Registered users will see a tick box at checkout to save their delivery details for future purchases.
 
-4. **As a registered user, I would like the ability to edit or delete a previous comment that I have left for a particular blog.** 
+4. **As a registered user, I would like the ability to delete a previous comment that I have left for a particular blog.** 
 
-Registered users will see options to edit and delete their comments on the particular blog post.
+Registered users will see options delete their comments on the particular blog post.
 
 5. **As a registered user, I would like the ability to edit or delete my profile/account.**
 
@@ -156,7 +156,7 @@ Confirm that the user can interact with the site by searching for products using
 
 The correct products were found and displayed when searching by keyword. When there was more than one product matching the keyword then the correct number of products were shown.
 
-## ![](searchbar_confirmation.png)
+![](/docs/testing_images/searchbar_confirmation.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
@@ -188,7 +188,7 @@ All the navigation links function correctly for all users and link to the correc
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
-### 4.Footer
+### 4. Footer
 
 Test footer links function correctly and that it scrolls with the page contents.
 
@@ -211,7 +211,7 @@ Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated test
 
 ### 5: Home Page
 
-## Test to check the Home Page is displaying the correct information, the images scales correctly and all the collections links are working correctly.
+Test to check the Home Page is displaying the correct information, the images scales correctly and all the collections links are working correctly.
 
 **TESTING STEPS:**
 
@@ -249,11 +249,11 @@ Test to confirm that the user registration process functions correctly.
 
 The form validation functioned as expected prompting the user to complete all the fields with valid information. The user was redirected to the Verify Your Email page after clicking the Sign Up button with the correct success message being displayed.
 
-![](verify_email_confirmation.png)
+![](/docs/testing_images/verify_email_confirmation.png)
 
 The confirmation was received at the specified email address. See below.
 
-![](email_confirmation.png)
+![](/docs/testing_images/email_confirmation.png)
 
 The link in the email redirected the user to the Confirm Email address page and clicking the Confirm button successfully verified the email address. Sign-in was successful using the new user credentials and the correct navigation links were displayed in the My Account dropdown menu.
 
@@ -301,11 +301,9 @@ Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated test
 
 Confirm account owners are able to reset their password if they have forgotten theirs.
 
-1. Open Chrome browser and navigate to: [https://snowflakes-christmas-shop.herokuapp.com/](https://vinyl-rack.herokuapp.com/).
-2. Click login from the My Account drop down menu.
-3. On the sign in page click forgot password:
+1. On the sign in page click forgot password:
 
-![](sign_in_html.png)
+![](/docs/testing_images/sign_in_html.png)
 
 1. Confirm the user is brought to the password reset page to enter their email address.
 2. Enter your email address and click "reset my password".
@@ -317,9 +315,9 @@ Clicking the Forgot password button in the Login page successfully brings the us
 
 Tests performed using Chrome, Firefox & Safari desktop browsers. Repeated tests using an iPhone XMax with no issues.
 
-![](password_reset.png)
+![](/docs/testing_images/password_reset.png)
 
-![](password_reset_2.jpeg) ![](password_reset_3.jpeg) ![](password_reset_4.jpeg)
+![](/docs/testing_images/password_reset_2.jpeg) ![](/docs/testing_images/password_reset_3.jpeg) ![](/docs/testing_images/password_reset_4.jpeg)
 
 ### 7: All Products Page 
 
@@ -358,10 +356,10 @@ Test to confirm that the correct information is displayed on the Product Details
 
 The Product Details page displays the correct information for logged out, logged in (non admin) and logged in (admin) users.
 
-![](product_detail_confirmation_desktop.png)
+![](/docs/testing_images/product_detail_confirmation_desktop.png)
 
 
-Clicking the Add To Bag button successfully adds the product to the shopping bag as can be seen in the two images below: ![](addtocart_toast_success.png) ![](shopping_bag.png)
+Clicking the Add To Bag button successfully adds the product to the shopping bag as can be seen in the two images below: ![](/docs/testing_images/addtocart_toast_success.png) ![](/docs/testing_images/shopping_bag.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone XMax mobile device with no issues.
 
@@ -383,11 +381,11 @@ Clicking on the By Price link correctly displays all the products in ascending p
 
 When using the product sort filter, to organize the products by title, the products are displayed in the correct order.
 
-![](price_filter_confirmation.png)
+![](/docs/testing_images/price_filter_confirmation.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
-## 8.1 Checkout - Shopping Bag. Adding, Editing and Removing products from Cart.
+## 8.1 Checkout - Shopping Bag.
 
 Test to confirm that users can add products to their shopping bag and edit their shopping bag before checkout.
 
@@ -413,7 +411,7 @@ When the Bag Total was below the free delivery threshold of €50 the correct in
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
-### 8.2: Checkout and Stripe Payment**
+### 8.2: Checkout and Stripe Payment
 
 Test to confirm that the user can securely checkout using Stripe by entering their delivery details and credit card information. Confirm that the order is recorded correctly and appears in the users profile page under previous orders. Also checks that the confirmation email is sent to the user.
 
@@ -441,27 +439,27 @@ Test to confirm that the user can securely checkout using Stripe by entering the
 
 The checkout page order summary displayed the correct information. The form validation functioned correctly prompting the user to complete all mandatory fields with the correct information. 
 
-![](checkout_prompt.png)
+![](/docs/testing_images/checkout_prompt.png)
 
 The order success message was displayed and the correct information was displayed on the Order Confirmation page. See below: 
 
-![](checkout_confirmation_desktop.png)
+![](/docs/testing_images/checkout_confirmation_desktop.png)
 
 The confirmation email was received and this contained the correct information. See below:
 
-![](order_confirmation_email.png)
+![](/docs/testing_images/order_confirmation_email.png)
 
 The orders table in the Django Administration panel had been updated to include the new order with all details being correct. 
 
-![](admin_order_confirmation.png)
+![](/docs/testing_images/admin_order_confirmation.png)
 
 The payment was created and charged in Stripe (see image below).
 
-![](stripe_order_confirmed.png)
+![](/docs/testing_images/stripe_order_confirmed.png)
 
 The My Profile page listed the new order and clicking on the order number displayed the correct information:
 
-![](profile_order_history_confirmation.png)
+![](/docs/testing_images/profile_order_history_confirmation.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
@@ -491,23 +489,23 @@ Test to confirm that admin only can write a product blog post and that logged in
 
 ### RESULTS:
 
-When visiting the site as a non-admin user, the blogs page is visible with a list of blog posts. ![](blogs_non_admin.png)
+When visiting the site as a non-admin user, the blogs page is visible with a list of blog posts. ![](/docs/testing_images/blogs_non_admin.png)
 
 Clicking "Read more" on a blog post brings the user to the blog post page to read the full blog
 
 When visiting as a registered user, blog posts can be read and also commented on:
 
-![](registered_users_blog_comment.png)
+![](/docs/testing_images/registered_users_blog_comment.png)
 
 Registered users can delete comments they post, but not edit them. This feature could be added in future iterations of the site.
 
 When visiting the site as an admin, new blog posts can be added. Admin can also edit and delete existing posts via the website on the Django admin console.
 
-![](edit_blogpost_frontend.png)
+![](/docs/testing_images/edit_blogpost_frontend.png)
 
 I then logged into the Django admin and confirmed the admin user is able to view and add blog posts from here.
 
-![](admin_add_blogpost_superuser.png)
+![](/docs/testing_images/admin_add_blogpost_superuser.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
@@ -526,11 +524,11 @@ Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated test
 
 The form validation functions correctly prompting the user to complete all the required fields. Clicking the Submit button results in the correct success message being displayed stating that the message has been sent.
 
-![](getintouch_toast.png)
+![](/docs/testing_images/getintouch_toast.png)
 
 The site admin will receive an email letting them know a customer has sent a message and the contents of the message:
 
-![](admin_email_confirmation.png)
+![](/docs/testing_images/admin_email_confirmation.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
@@ -607,13 +605,13 @@ Stripe Elements Java Script
 
 No errors reported, two warnings: 'template literal syntax' is only available in ES6
 
-![](jshint_stripe_js.png)
+![](/docs/testing_images/jshint_stripe_js.png)
 
 Country Field Java Script
 
 No errors, one warning: 'let' is available in ES6 (use 'esversion:') or Mozilla JS extensions (use moz).
 
-![](jshint_countryfield_js.png)
+![](/docs/testing_images/jshint_countryfield_js.png)
 
 [W3C HTML Checker](https://validator.w3.org/nu/)
 
@@ -621,31 +619,31 @@ See screenshots of individual page checks below. No errors noted, some minor war
 
 **Homepage:**
 
-![](html_validator_homepage.png)
+![](/docs/testing_images/html_validator_homepage.png)
 
 **Products page:**
 
-![](html_validator_all_products.png)
+![](/docs/testing_images/html_validator_all_products.png)
 
 **Product detail Page:**
 
-![](htmll_validator_one_warning_product_details.png)
+![](/docs/testing_images/htmll_validator_one_warning_product_details.png)
 
 **Blogs page:**
 
-![](html_validator_blogs.png)
+![](/docs/testing_images/html_validator_blogs.png)
 
 **Blog post page:**
 
-![](html_validator_blog_post_page.png)
+![](/docs/testing_images/html_validator_blog_post_page.png)
 
 **Shopping bag page:**
 
-![](html_validator_shopping_bag_2_warnings.png)
+![](/docs/testing_images/html_validator_shopping_bag_2_warnings.png)
 
 **Checkout:**
 
-![](html_validator_checkout_one_warning.png)
+![](/docs/testing_images/html_validator_checkout_one_warning.png)
 
 **Contact us:**
 
@@ -653,7 +651,7 @@ See screenshots of individual page checks below. No errors noted, some minor war
 
 The CSS code was validated using the W3C CSS Checker - no errors were found.
 
-![](W3C CSS Validator results for https:::snowflakes-christmas-shop.herokuapp.com: (CSS level 3 + SVG) 2021-12-12 21-34-13.png)
+![](/docs/testing_images/css_validator.png)
 
 ### Lighthouse Reports
 
