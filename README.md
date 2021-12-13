@@ -409,6 +409,7 @@ The following process assumes that GMail will be used for sending and receiving 
 
 ### Code
 * [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+* [Blog App](https://ms4-fit-as-a-fiddle.herokuapp.com/blog/) the inspiration and technical knowledge for this app came from a fellow student, Brian Conn. 
 
 ### Content
 The majority of the data for the products listed on this site was taken from [Arnotts](https://www.arnotts.ie) and [Christmas-Decorations.com](https://www.christmas-decorations.com/) websites 
