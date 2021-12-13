@@ -24,8 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '--6*hr&cak4zd9#$_&1+@#qq%m50(!z(bxy%y-!0o%r3r*f%^g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['snowflakes-christmas-shop.herokuapp.com', 'localhost']
 

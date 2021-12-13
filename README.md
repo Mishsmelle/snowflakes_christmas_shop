@@ -57,9 +57,9 @@ Imagery is important. The hero image is designed to be striking and catch the us
 
 ### Wireframes
 
-Home Page Wireframe - [View]()
-Mobile Wireframe - [View]()
-Contact Us Page Wireframe - [View]()
+Home Page Wireframe - [View](/docs/wireframes/Homepage_wireframe_desktop.png)
+Mobile Wireframe - [View](/docs/wireframes/homepage_wireframe_mobile.png))
+Contact Us Page Wireframe - [View](/docs/wireframes/wireframe_contact_page.png))
 
 ### Features
 

@@ -405,7 +405,9 @@ Test to confirm that users can add products to their shopping bag and edit their
 
 When adding products to the shopping bag the correct information is displayed in the pop-up message window. Clicking the Go To Secure Checkout button in the pop-up window opens the Shopping Bag page. It was also confirmed that clicking the shopping bag icon in the nav bar takes the user to the same page. The information displayed on the Shopping Bag page was correct matching the items previously added to the Bag.
 
-Item quantities could be adjusted using the +/- buttons and clicking on the Update link adjusted the subtotal and totals accordingly. When completing this round of testing an error was spotted where products could not be removed from the shopping bag. The button resulted in a 500 error where this had previously worked before.
+Item quantities could be adjusted using the +/- buttons and clicking on the Update link adjusted the subtotal and totals accordingly. When completing this round of testing an error was spotted where products could not be removed from the shopping bag. The button resulted in a 500 error where this had previously worked before. This error has since been resolved. 
+
+![](/docs/testing_images/bag_remove.png)
 
 When the Bag Total was below the free delivery threshold of €50 the correct information was displayed on the Shopping Bag page and the pop-up message. See images below.
 
@@ -459,7 +461,7 @@ The payment was created and charged in Stripe (see image below).
 
 The My Profile page listed the new order and clicking on the order number displayed the correct information:
 
-![](/docs/testing_images/profile_order_history_confirmation.png)
+![](/docs/testing_images/profile_order_history.png)
 
 Tests performed using Chrome, Firefox and Safari desktop browsers. Repeated tests using an iPhone Max X mobile device with no issues.
 
@@ -647,6 +649,8 @@ See screenshots of individual page checks below. No errors noted, some minor war
 
 **Contact us:**
 
+![](/docs/testing_images/html_validator_contact_us.png)
+
 [W3C CSS Checker](https://jigsaw.w3.org/css-validator/)
 
 The CSS code was validated using the W3C CSS Checker - no errors were found.
@@ -665,7 +669,7 @@ MOBILE
 * [Profile Page - Mobile](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/profile_page_mobile_lighthouse.pdf)
 * [Product Management - Mobile](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/product_management_mobile_lighthouse.pdf)
 * [Admin Page - Mobile](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/admin_lighthouse_mobile.pdf)
-* Home page - Mobile
+* [Home page - Mobile](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/lighthouse_home/mobile.pdf)
 
 DESKTOP
 
@@ -676,14 +680,14 @@ DESKTOP
 * [Profile Page - Desktop](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/profile_page_desktop_lighthouse.pdf)
 * [Product Management - Desktop](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/product_management_lighthouse_desktop.pdf)
 * [Admin Page - Desktop](https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/admin_desktop_lighthouse.pdf)
-* Home page - Desktop
+* [Home page - Desktop]((https://github.com/Mishsmelle/snowflakes_christmas_shop/blob/main/docs/Lighthouse_Reports/lighthouse_homepage_desktop.pdf))
 
 ## Bugs/Issues/Unresolved Issues
 
 When testing a few errors were found:
 
-In the html validator for the contact us page, an error message indicates that a select element cannot have a placeholder but removing the placeholder causes a 404 error on the contact page.
+In the html validator for the contact us page, an error message indicates that a select element cannot have a placeholder but removing the placeholder causes a 404 error on the contact page. This has since been resolved. 
 
-When creating a order as a registered user the order history is not updating on the profile page.
+When creating a order as a registered user the order history is not updating on the profile page. This error has since been resolved. 
 
-On the Shopping bag page the remove button is not working.
+On the Shopping bag page the remove button is not working. This error has since been resolved. 
