@@ -7,11 +7,11 @@ class Contact(models.Model):
     """
 
     subject = (
-        ('general', 'General Questions'),
-        ('product_information', 'Product Information'),
-        ('order_status', 'Order Status'),
-        ('shipping_delivery', 'Shipping and Delivery'),
-        ('bulk_purchasing', 'Wholesale Purchasing'),)
+    ('general', 'General Questions'),
+    ('product_information', 'Product Information'),
+    ('order_status', 'Order Status'),
+    ('shipping_delivery', 'Shipping and Delivery'),
+    ('bulk_purchasing', 'Wholesale Purchasing'),)
 
     class Meta:
         ordering = ("-message_date",)
